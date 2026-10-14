@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <title>Basik | Official Website Launching Soon</title>
+    <link rel="icon" type="image/png" href="assets/Logo.png" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@300,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #3b0645;
+        --pink: #ea0a76;
+        --orange: #fc8f0d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        min-width: 320px;
+        min-height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: grid;
+        min-height: 100svh;
+        place-items: center;
+        padding: clamp(18px, 3.8vw, 55px);
+        background: #fff;
+        font-family: "Clash Grotesk", sans-serif;
+      }
+
+      .launch-card {
+        position: relative;
+        width: min(92vw, calc(177.78svh - 124px), 1320px);
+        aspect-ratio: 1320 / 738;
+        overflow: hidden;
+        isolation: isolate;
+        container-type: inline-size;
+        border-radius: clamp(12px, 2.92cqw, 38.5px);
+        -webkit-mask: url("assets/launch-mask.svg") center / 100% 100% no-repeat;
+        mask: url("assets/launch-mask.svg") center / 100% 100% no-repeat;
+      }
+
+      .artwork {
+        position: absolute;
+        top: -5.82%;
+        left: 0;
+        z-index: -1;
+        display: block;
+        width: 100%;
+        height: 135.5%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .brand-lockup {
+        position: absolute;
+        top: 10.7%;
+        left: 40.8%;
+        display: flex;
+        align-items: center;
+        gap: 0.76cqw;
+      }
+
+      .brand-mark {
+        display: block;
+        width: 5.68cqw;
+        height: 5.68cqw;
+        object-fit: contain;
+      }
+
+      .brand-name {
+        display: block;
+        width: 8.8cqw;
+        height: auto;
+      }
+
+      .brand-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5cqw;
+      }
+
+      .brand-tagline {
+        width: 18.1cqw;
+        margin: 0;
+        color: var(--ink);
+        font-size: 1.82cqw;
+        font-weight: 300;
+        line-height: 1.59cqw;
+      }
+
+      .message {
+        position: absolute;
+        top: 39%;
+        left: 28.56%;
+        width: 65%;
+        color: var(--ink);
+      }
+
+      .eyebrow,
+      .headline {
+        margin: 0;
+        font-weight: 300;
+        line-height: 1;
+      }
+
+      .eyebrow {
+        font-size: 4.02cqw;
+        white-space: nowrap;
+      }
+
+      .headline-row {
+        position: relative;
+        width: 100%;
+        margin-top: -1.45cqw;
+        white-space: nowrap;
+      }
+
+      .headline {
+        font-size: 5.83cqw;
+        font-weight: 400;
+      }
+
+      .soon {
+        position: absolute;
+        top: -0.35cqw;
+        left: 27.4cqw;
+        color: var(--pink);
+        font-family: "Ocean Trace-Personal use", "Ocean Trace", cursive;
+        font-size: 7.65cqw;
+        font-weight: 400;
+        line-height: 0.8;
+      }
+
+      .celebrate-button {
+        position: absolute;
+        top: 72.9%;
+        left: 50%;
+        z-index: 3;
+        display: inline-flex;
+        width: 23.18cqw;
+        min-height: 5.5cqw;
+        align-items: center;
+        justify-content: center;
+        gap: max(8px, 1.2cqw);
+        padding: 0.2cqw 1.3cqw;
+        transform: translateX(-50%);
+        border: 0;
+        border-radius: 1.59cqw;
+        background: var(--orange);
+        color: #fff;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 2.88cqw;
+        line-height: 1;
+        white-space: nowrap;
+        transition: background-color 160ms ease, transform 160ms ease;
+      }
+
+      .flower-confetti {
+        position: absolute;
+        z-index: 2;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .flower-particle {
+        position: absolute;
+        bottom: 2%;
+        display: block;
+        width: var(--flower-size);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 50% 50%, #ffd44a 0 13%, transparent 14%),
+          radial-gradient(circle at 50% 19%, var(--petal-color) 0 22%, transparent 23%),
+          radial-gradient(circle at 80% 41%, var(--petal-color) 0 22%, transparent 23%),
+          radial-gradient(circle at 68% 75%, var(--petal-color) 0 22%, transparent 23%),
+          radial-gradient(circle at 32% 75%, var(--petal-color) 0 22%, transparent 23%),
+          radial-gradient(circle at 20% 41%, var(--petal-color) 0 22%, transparent 23%);
+        opacity: 0;
+        animation: flower-burst var(--duration) ease-out var(--delay) forwards;
+      }
+
+      @keyframes flower-burst {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0) rotate(0deg) scale(0.5);
+        }
+        12% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: translate3d(var(--drift-x), var(--drift-y), 0) rotate(var(--spin)) scale(1);
+        }
+      }
+
+      .celebrate-button:hover {
+        transform: translateX(-50%) translateY(-2px);
+        background: #f47c00;
+      }
+
+      .celebrate-button:focus-visible {
+        outline: 3px solid var(--ink);
+        outline-offset: 4px;
+      }
+
+      .celebrate-button .hgi {
+        display: block;
+        font-size: 3.86cqw;
+        line-height: 1;
+        flex: 0 0 auto;
+      }
+
+      .celebrate-button .hgi-party::before {
+        content: "\1f389";
+        font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+        font-style: normal;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 18px 4vw;
+        }
+
+        .launch-card {
+          width: min(92vw, calc(177.78svh - 72px), 1320px);
+        }
+
+        .celebrate-button {
+          width: auto;
+          min-height: max(28px, 5.5cqw);
+          border-radius: max(9px, 1.59cqw);
+          font-size: max(12px, 2.88cqw);
+        }
+
+        .celebrate-button .hgi {
+          font-size: max(24px, 3.86cqw);
+        }
+      }
+
+      @media (max-width: 640px) and (orientation: portrait) {
+        .launch-card {
+          width: min(92vw, 430px);
+          height: min(max(360px, 82svh), calc(100svh - 36px));
+          aspect-ratio: auto;
+          border-radius: 24px;
+        }
+
+        .artwork {
+          top: 0;
+          height: 100%;
+          object-position: center 60%;
+        }
+
+        .brand-lockup {
+          top: 9%;
+          left: 50%;
+          gap: 2.5cqw;
+          transform: translateX(-50%);
+        }
+
+        .brand-mark {
+          width: 12cqw;
+          height: 12cqw;
+        }
+
+        .brand-name {
+          width: 18cqw;
+        }
+
+        .brand-copy {
+          gap: 1cqw;
+        }
+
+        .brand-tagline {
+          width: 38cqw;
+          font-size: max(12px, 3.7cqw);
+          line-height: max(13px, 4cqw);
+        }
+
+        .message {
+          top: 43%;
+          left: 3%;
+          width: 94%;
+          text-align: center;
+        }
+
+        .eyebrow {
+          font-size: clamp(19px, 5.5cqw, 24px);
+        }
+
+        .headline-row {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: center;
+          gap: 2px;
+          margin-top: 8px;
+          margin-bottom: 0;
+        }
+
+        .headline {
+          font-size: clamp(28px, 9cqw, 40px);
+        }
+
+        .soon {
+          position: static;
+          font-size: clamp(40px, 12.5cqw, 56px);
+          line-height: 0.9;
+        }
+
+        .celebrate-button {
+          top: auto;
+          bottom: 9%;
+          min-height: 40px;
+          gap: 10px;
+          padding: 8px 20px;
+          border-radius: 16px;
+          font-size: 16px;
+        }
+
+        .celebrate-button .hgi {
+          font-size: 24px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="launch-card" aria-label="Basik official website launching soon">
+      <img class="artwork" src="assets/launch-waves.png" alt="" />
+      <div class="brand-lockup" aria-label="Basik, your beyond-school foundation">
+        <img class="brand-mark" src="assets/Logo.png" alt="" />
+        <div class="brand-copy">
+          <img class="brand-name" src="assets/Logo Textx.png" alt="Basik" />
+          <p class="brand-tagline">Your Beyond-School<br />Foundation</p>
+        </div>
+      </div>
+      <section class="message" aria-labelledby="launch-title">
+        <p class="eyebrow">Official Website</p>
+        <h1 class="headline-row" id="launch-title">
+          <span class="headline">Launching</span>
+          <span class="soon">Soon</span>
+        </h1>
+      </section>
+      <div class="flower-confetti" aria-hidden="true"></div>
+      <button class="celebrate-button" type="button">
+        <i class="hgi hgi-stroke hgi-rounded hgi-party" aria-hidden="true"></i>
+        <span>Celebrate</span>
+      </button>
+    </main>
+    <script>
+      const launchCard = document.querySelector(".launch-card");
+      const celebrateButton = document.querySelector(".celebrate-button");
+      const confettiLayer = document.querySelector(".flower-confetti");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const petalColors = ["#ea0a76", "#fc8f0d", "#a54bb5", "#ef5c43", "#f5c928"];
+
+      celebrateButton.addEventListener("click", () => {
+        if (reducedMotion.matches) return;
+
+        const { width, height } = launchCard.getBoundingClientRect();
+        const flowerCount = Math.min(32, Math.max(16, Math.round(width / 40)));
+        ["left", "right"].forEach((side) => {
+          for (let index = 0; index < flowerCount; index += 1) {
+            const flower = document.createElement("span");
+            const direction = side === "left" ? 1 : -1;
+            const drift = width * (0.15 + Math.random() * 0.28) * direction;
+            flower.className = "flower-particle";
+            flower.style.left = side === "left" ? "0" : "100%";
+            flower.style.setProperty("--flower-size", `clamp(10px, 1.7cqw, 24px)`);
+            flower.style.setProperty("--petal-color", petalColors[index % petalColors.length]);
+            flower.style.setProperty("--drift-x", `${drift + (Math.random() - 0.5) * width * 0.12}px`);
+            flower.style.setProperty("--drift-y", `${-height * (0.38 + Math.random() * 0.45)}px`);
+            flower.style.setProperty("--spin", `${180 + Math.random() * 540}deg`);
+            flower.style.setProperty("--duration", `${1.7 + Math.random() * 0.9}s`);
+            flower.style.setProperty("--delay", `${Math.random() * 0.22}s`);
+            flower.addEventListener("animationend", () => flower.remove(), { once: true });
+            confettiLayer.append(flower);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
