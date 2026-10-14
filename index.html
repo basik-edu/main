@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://api.fontshare.com" />
     <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
     <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@300,400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
     <style>
       :root {
         color-scheme: light;
@@ -153,7 +152,6 @@
         min-height: 5.5cqw;
         align-items: center;
         justify-content: center;
-        gap: max(8px, 1.2cqw);
         padding: 0.2cqw 1.3cqw;
         transform: translateX(-50%);
         border: 0;
@@ -218,19 +216,6 @@
         outline-offset: 4px;
       }
 
-      .celebrate-button .hgi {
-        display: block;
-        font-size: 3.86cqw;
-        line-height: 1;
-        flex: 0 0 auto;
-      }
-
-      .celebrate-button .hgi-party::before {
-        content: "\1f389";
-        font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
-        font-style: normal;
-      }
-
       @media (max-width: 640px) {
         body {
           padding: 18px 4vw;
@@ -247,9 +232,6 @@
           font-size: max(12px, 2.88cqw);
         }
 
-        .celebrate-button .hgi {
-          font-size: max(24px, 3.86cqw);
-        }
       }
 
       @media (max-width: 640px) and (orientation: portrait) {
@@ -327,14 +309,9 @@
           top: auto;
           bottom: 9%;
           min-height: 40px;
-          gap: 10px;
           padding: 8px 20px;
           border-radius: 16px;
           font-size: 16px;
-        }
-
-        .celebrate-button .hgi {
-          font-size: 24px;
         }
       }
 
@@ -367,7 +344,6 @@
       </section>
       <div class="flower-confetti" aria-hidden="true"></div>
       <button class="celebrate-button" type="button">
-        <i class="hgi hgi-stroke hgi-rounded hgi-party" aria-hidden="true"></i>
         <span>Celebrate</span>
       </button>
     </main>
