@@ -1,0 +1,2626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2b0638" />
+    <title>Basik Speaker | One-Month Intensive Public Speaking Training Programme (Grades 5–10)</title>
+    <meta
+      name="description"
+      content="Basik Speaker: One-month intensive public speaking training programme for students in Grades 5-10. 30 days of 1-on-1 mentorship, daily speaking missions, live masterclasses, and weekly stage showcases."
+    />
+    <link rel="icon" type="image/png" href="assets/Logo.png" />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@300,400,500,600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        /* Core Brand Tokens */
+        --ink: #2b0638;
+        --ink-dark: #190222;
+        --ink-light: #3e0c4f;
+        --ink-gradient: linear-gradient(135deg, #2b0638 0%, #440d58 100%);
+        --pink: #ea0a76;
+        --pink-hover: #d20768;
+        --pink-subtle: rgba(234, 10, 118, 0.08);
+        --pink-glow: rgba(234, 10, 118, 0.25);
+        --orange: #fc8f0d;
+        --orange-hover: #e57e05;
+        --orange-subtle: rgba(252, 143, 13, 0.08);
+        --purple-accent: #8b34ba;
+        --purple-subtle: rgba(139, 52, 186, 0.08);
+        --green-whatsapp: #1faf53;
+        --green-whatsapp-hover: #179b47;
+
+        /* Surface & Background */
+        --bg-page: #ffffff;
+        --bg-warm: #faf8fc;
+        --bg-subtle: #f5f2f8;
+        --bg-card: #ffffff;
+        --text-main: #1d0724;
+        --text-body: #483850;
+        --text-muted: #74637a;
+        --text-light: #9f8ea5;
+
+        /* Borders & Elevation */
+        --border-subtle: #eee9f3;
+        --border-card: #e6dfed;
+        --border-focus: #ea0a76;
+        --shadow-xs: 0 1px 2px rgba(43, 6, 56, 0.04);
+        --shadow-sm: 0 4px 14px rgba(43, 6, 56, 0.04);
+        --shadow-md: 0 10px 28px rgba(43, 6, 56, 0.07);
+        --shadow-lg: 0 20px 48px -12px rgba(43, 6, 56, 0.12);
+        --shadow-glow: 0 12px 36px rgba(234, 10, 118, 0.2);
+
+        /* Radius */
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 18px;
+        --radius-card: 22px;
+        --radius-pill: 9999px;
+
+        /* Layout */
+        --container-max: 1180px;
+        --font-display: "Clash Grotesk", sans-serif;
+        --font-body: "Plus Jakarta Sans", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        color: var(--text-body);
+        background: var(--bg-page);
+        line-height: 1.65;
+        font-weight: 400;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Headings Typography */
+      h1, h2, h3, h4, h5, h6, .brand-font {
+        font-family: var(--font-display);
+        color: var(--ink);
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+      }
+
+      h1 { font-weight: 600; }
+      h2 { font-weight: 600; }
+      h3 { font-weight: 600; }
+      h4 { font-weight: 600; }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      button {
+        font-family: inherit;
+      }
+
+      .container {
+        width: min(100% - 48px, var(--container-max));
+        margin-inline: auto;
+      }
+
+      /* Ambient Aurora Glow */
+      .ambient-glow-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 1400px;
+        height: 620px;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .ambient-orb-1 {
+        position: absolute;
+        top: -100px;
+        left: 15%;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(234, 10, 118, 0.12) 0%, rgba(234, 10, 118, 0) 70%);
+        filter: blur(50px);
+      }
+
+      .ambient-orb-2 {
+        position: absolute;
+        top: -50px;
+        right: 15%;
+        width: 480px;
+        height: 480px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(252, 143, 13, 0.12) 0%, rgba(252, 143, 13, 0) 70%);
+        filter: blur(60px);
+      }
+
+      /* ================= TOP NAVBAR ================= */
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.88);
+        border-bottom: 1px solid rgba(238, 233, 243, 0.8);
+        padding-block: 14px;
+        transition: all 0.2s ease;
+      }
+
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        transition: opacity 0.18s ease;
+      }
+
+      .brand-link:hover {
+        opacity: 0.9;
+      }
+
+      .brand-link img.logo-icon {
+        height: 36px;
+        width: auto;
+        object-fit: contain;
+      }
+
+      .brand-title-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .brand-title-wrap .brand-wordmark {
+        height: 20px;
+        width: auto;
+        max-width: 95px;
+        object-fit: contain;
+        aspect-ratio: 929 / 216;
+        display: block;
+      }
+
+      .brand-title-wrap .tagline {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--text-muted);
+        letter-spacing: 0.02em;
+        line-height: 1.1;
+        margin-top: 2px;
+        white-space: nowrap;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        font-size: 13.5px;
+        font-weight: 500;
+        color: var(--text-body);
+        transition: color 0.18s ease;
+        position: relative;
+        padding-block: 4px;
+      }
+
+      .nav-links a:hover {
+        color: var(--pink);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--pink);
+        transition: width 0.2s ease;
+        border-radius: 2px;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      /* ================= BUTTONS ================= */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 9px 18px;
+        border-radius: var(--radius-sm);
+        font-size: 13.5px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        text-decoration: none;
+        border: 1px solid transparent;
+        line-height: 1.2;
+      }
+
+      .btn-primary {
+        background: var(--ink-gradient);
+        color: #ffffff;
+        box-shadow: 0 4px 14px rgba(43, 6, 56, 0.2);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(43, 6, 56, 0.3);
+      }
+
+      .btn-pink {
+        background: linear-gradient(135deg, var(--pink) 0%, #ff2a8d 100%);
+        color: #ffffff;
+        box-shadow: var(--shadow-glow);
+      }
+
+      .btn-pink:hover {
+        background: linear-gradient(135deg, var(--pink-hover) 0%, #e6177b 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 14px 38px rgba(234, 10, 118, 0.35);
+      }
+
+      .btn-outline {
+        background: #ffffff;
+        border-color: var(--border-card);
+        color: var(--ink);
+      }
+
+      .btn-outline:hover {
+        border-color: var(--ink);
+        background: var(--bg-warm);
+        transform: translateY(-2px);
+      }
+
+      .btn-whatsapp {
+        background: var(--green-whatsapp);
+        color: #ffffff;
+        box-shadow: 0 4px 14px rgba(31, 175, 83, 0.25);
+      }
+
+      .btn-whatsapp:hover {
+        background: var(--green-whatsapp-hover);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(31, 175, 83, 0.35);
+      }
+
+      .btn-lg {
+        padding: 13px 26px;
+        font-size: 14.5px;
+        border-radius: var(--radius-md);
+        font-weight: 600;
+      }
+
+      /* ================= LIVE COHORT PILL ================= */
+      .cohort-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        background: rgba(234, 10, 118, 0.08);
+        border: 1px solid rgba(234, 10, 118, 0.2);
+        border-radius: var(--radius-pill);
+        font-size: 12.5px;
+        font-weight: 500;
+        color: var(--pink);
+        margin-bottom: 18px;
+      }
+
+      .pulse-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--pink);
+        box-shadow: 0 0 0 0 rgba(234, 10, 118, 0.6);
+        animation: pulse 1.8s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(234, 10, 118, 0.6);
+        }
+        70% {
+          box-shadow: 0 0 0 8px rgba(234, 10, 118, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(234, 10, 118, 0);
+        }
+      }
+
+      /* ================= HERO SECTION ================= */
+      .hero-section {
+        position: relative;
+        padding-top: clamp(36px, 5vw, 64px);
+        padding-bottom: clamp(48px, 6vw, 76px);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.95fr;
+        gap: clamp(32px, 5vw, 60px);
+        align-items: center;
+      }
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-headline {
+        font-size: clamp(34px, 4.4vw, 54px);
+        line-height: 1.08;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 18px;
+      }
+
+      .hero-headline .highlight-pink {
+        color: var(--pink);
+        position: relative;
+        display: inline-block;
+      }
+
+      .hero-headline .highlight-pink::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: rgba(234, 10, 118, 0.2);
+        border-radius: 2px;
+      }
+
+      .hero-subhead {
+        font-size: clamp(16px, 1.8vw, 19px);
+        color: var(--text-body);
+        line-height: 1.55;
+        font-weight: 400;
+        margin-bottom: 28px;
+        max-width: 540px;
+      }
+
+      .hero-actions-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 32px;
+      }
+
+      /* Social Proof Snippet */
+      .hero-social-proof {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-top: 14px;
+        border-top: 1px solid var(--border-subtle);
+        width: 100%;
+      }
+
+      .avatar-stack {
+        display: flex;
+        align-items: center;
+      }
+
+      .avatar-stack-item {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        background: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        font-weight: 600;
+        color: #fff;
+        margin-left: -8px;
+        box-shadow: var(--shadow-xs);
+      }
+
+      .avatar-stack-item:first-child {
+        margin-left: 0;
+      }
+
+      .avatar-stack-item.bg-1 { background: #6a1b9a; }
+      .avatar-stack-item.bg-2 { background: var(--pink); }
+      .avatar-stack-item.bg-3 { background: var(--orange); }
+      .avatar-stack-item.bg-4 { background: #1faf53; }
+
+      .proof-text {
+        font-size: 13px;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      .proof-text strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .proof-stars {
+        color: #ffb703;
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      /* Hero Visual Showcase Card */
+      .hero-visual-card {
+        position: relative;
+        border-radius: var(--radius-card);
+        background: var(--ink-gradient);
+        box-shadow: var(--shadow-lg);
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .visual-photo-wrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 4.3;
+        overflow: hidden;
+      }
+
+      .visual-photo-wrap img.hero-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .hero-visual-card:hover .visual-photo-wrap img.hero-photo {
+        transform: scale(1.03);
+      }
+
+      .photo-gradient-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to top,
+          rgba(25, 2, 34, 0.92) 0%,
+          rgba(25, 2, 34, 0.35) 45%,
+          transparent 75%
+        );
+      }
+
+      /* Floating Feature Chips over Hero Image */
+      .floating-chip {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(25, 2, 34, 0.82);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius-md);
+        padding: 8px 14px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+        z-index: 3;
+      }
+
+      .chip-top-left {
+        top: 20px;
+        left: 20px;
+      }
+
+      .chip-bottom-right {
+        bottom: 24px;
+        right: 20px;
+      }
+
+      .chip-bottom-left {
+        bottom: 24px;
+        left: 20px;
+      }
+
+      .chip-icon {
+        font-size: 14px;
+      }
+
+      /* Hero Card Bottom Meta Strip */
+      .hero-card-meta {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 24px;
+        z-index: 2;
+        color: #ffffff;
+      }
+
+      .hero-meta-badge {
+        display: inline-block;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-weight: 600;
+        color: var(--orange);
+        margin-bottom: 4px;
+      }
+
+      .hero-meta-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.25;
+        margin-bottom: 6px;
+      }
+
+      .hero-meta-sub {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.78);
+        font-weight: 400;
+      }
+
+      /* ================= STATS BENTO STRIP ================= */
+      .stats-section {
+        margin-top: 10px;
+        margin-bottom: 60px;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+
+      .stat-card {
+        background: #ffffff;
+        border: 1px solid var(--border-card);
+        border-radius: var(--radius-md);
+        padding: 22px 20px;
+        transition: all 0.24s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .stat-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: transparent;
+        transition: background 0.2s ease;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+        border-color: rgba(234, 10, 118, 0.3);
+      }
+
+      .stat-card:hover::before {
+        background: linear-gradient(90deg, var(--pink), var(--orange));
+      }
+
+      .stat-num-row {
+        display: flex;
+        align-items: baseline;
+        gap: 4px;
+        margin-bottom: 4px;
+      }
+
+      .stat-num {
+        font-family: var(--font-display);
+        font-size: clamp(28px, 3vw, 36px);
+        font-weight: 600;
+        color: var(--ink);
+        letter-spacing: -0.02em;
+        line-height: 1;
+      }
+
+      .stat-unit {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--pink);
+      }
+
+      .stat-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-main);
+        margin-bottom: 3px;
+      }
+
+      .stat-detail {
+        font-size: 12px;
+        color: var(--text-muted);
+        line-height: 1.4;
+      }
+
+      /* ================= SECTION HEADINGS ================= */
+      .section-header {
+        text-align: center;
+        max-width: 680px;
+        margin-inline: auto;
+        margin-bottom: 48px;
+      }
+
+      .badge-tag {
+        display: inline-block;
+        font-size: 11.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        color: var(--pink);
+        padding: 4px 12px;
+        background: var(--pink-subtle);
+        border-radius: var(--radius-pill);
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-size: clamp(26px, 3.4vw, 38px);
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.18;
+        letter-spacing: -0.02em;
+      }
+
+      .section-subtitle {
+        font-size: clamp(14.5px, 1.4vw, 16px);
+        color: var(--text-muted);
+        margin-top: 12px;
+        line-height: 1.6;
+      }
+
+      /* ================= BEFORE VS AFTER COMPARISON ================= */
+      .transformation-section {
+        padding-block: 64px;
+        background: var(--bg-warm);
+        border-top: 1px solid var(--border-subtle);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        max-width: 980px;
+        margin-inline: auto;
+      }
+
+      .comparison-card {
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        position: relative;
+        transition: all 0.24s ease;
+      }
+
+      .comparison-card.card-before {
+        background: #ffffff;
+        border: 1px solid var(--border-card);
+      }
+
+      .comparison-card.card-after {
+        background: linear-gradient(135deg, #25032e 0%, #3e074d 100%);
+        color: #ffffff;
+        border: 1px solid rgba(234, 10, 118, 0.3);
+        box-shadow: 0 16px 36px rgba(43, 6, 56, 0.15);
+      }
+
+      .comparison-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 22px;
+      }
+
+      .comparison-pill {
+        font-size: 11.5px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        padding: 4px 10px;
+        border-radius: var(--radius-pill);
+      }
+
+      .card-before .comparison-pill {
+        background: #f1ecf5;
+        color: var(--text-muted);
+      }
+
+      .card-after .comparison-pill {
+        background: rgba(234, 10, 118, 0.25);
+        color: #ff85be;
+      }
+
+      .comparison-title {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .card-before .comparison-title { color: var(--ink); }
+      .card-after .comparison-title { color: #ffffff; }
+
+      .comparison-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .comparison-list li {
+        font-size: 14px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        line-height: 1.5;
+      }
+
+      .card-before .comparison-list li {
+        color: var(--text-body);
+      }
+
+      .card-after .comparison-list li {
+        color: rgba(255, 255, 255, 0.88);
+      }
+
+      .comp-icon {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 1px;
+        font-size: 12px;
+      }
+
+      .card-before .comp-icon {
+        background: #f0e6e8;
+        color: #b54a5a;
+      }
+
+      .card-after .comp-icon {
+        background: rgba(31, 175, 83, 0.25);
+        color: #4ade80;
+      }
+
+      /* ================= 4 PILLARS (Bento Grid) ================= */
+      .pillars-section {
+        padding-block: 84px 50px;
+      }
+
+      .pillars-bento {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+      }
+
+      .pillar-bento-card {
+        background: #ffffff;
+        border: 1px solid var(--border-card);
+        border-radius: var(--radius-lg);
+        padding: clamp(28px, 3.5vw, 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .pillar-bento-card:hover {
+        border-color: rgba(43, 6, 56, 0.25);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-3px);
+      }
+
+      .pillar-top-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+
+      .pillar-icon-box {
+        width: 52px;
+        height: 52px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.25s ease;
+      }
+
+      .pillar-bento-card:hover .pillar-icon-box {
+        transform: scale(1.08) rotate(3deg);
+      }
+
+      .pillar-icon-box.c-ink {
+        background: rgba(43, 6, 56, 0.06);
+        color: var(--ink);
+      }
+
+      .pillar-icon-box.c-orange {
+        background: rgba(252, 143, 13, 0.1);
+        color: var(--orange);
+      }
+
+      .pillar-icon-box.c-pink {
+        background: rgba(234, 10, 118, 0.1);
+        color: var(--pink);
+      }
+
+      .pillar-icon-box.c-purple {
+        background: rgba(139, 52, 186, 0.1);
+        color: var(--purple-accent);
+      }
+
+      .pillar-icon-box svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      .pillar-number {
+        font-family: var(--font-display);
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--text-light);
+        letter-spacing: 0.04em;
+      }
+
+      .pillar-title {
+        font-size: clamp(20px, 2.2vw, 24px);
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 12px;
+        line-height: 1.25;
+      }
+
+      .pillar-desc {
+        font-size: 14.5px;
+        color: var(--text-body);
+        line-height: 1.65;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+
+      .pillar-highlights-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border-subtle);
+      }
+
+      .pillar-highlights-list li {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--text-main);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .pillar-highlights-list li svg {
+        color: var(--pink);
+        width: 15px;
+        height: 15px;
+        flex-shrink: 0;
+      }
+
+      /* ================= INTERACTIVE 30-DAY ROADMAP ================= */
+      .roadmap-section {
+        padding-block: 76px 60px;
+        background: var(--bg-warm);
+        border-top: 1px solid var(--border-subtle);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .roadmap-tabs-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 36px;
+        flex-wrap: wrap;
+      }
+
+      .roadmap-tab-btn {
+        padding: 10px 20px;
+        border-radius: var(--radius-pill);
+        border: 1px solid var(--border-card);
+        background: #ffffff;
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--text-body);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .roadmap-tab-btn:hover {
+        border-color: var(--ink);
+        color: var(--ink);
+      }
+
+      .roadmap-tab-btn.active {
+        background: var(--ink-gradient);
+        color: #ffffff;
+        border-color: transparent;
+        box-shadow: 0 4px 14px rgba(43, 6, 56, 0.2);
+      }
+
+      .roadmap-panels-container {
+        max-width: 960px;
+        margin-inline: auto;
+      }
+
+      .roadmap-panel {
+        display: none;
+        background: #ffffff;
+        border: 1px solid var(--border-card);
+        border-radius: var(--radius-card);
+        padding: clamp(28px, 4vw, 44px);
+        box-shadow: var(--shadow-sm);
+        animation: fadeIn 0.3s ease;
+      }
+
+      .roadmap-panel.active {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(6px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .panel-left-meta h3 {
+        font-size: clamp(22px, 2.5vw, 28px);
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 12px;
+        line-height: 1.25;
+      }
+
+      .panel-left-meta p {
+        font-size: 14.5px;
+        color: var(--text-body);
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .panel-deliverable-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 16px;
+        background: var(--pink-subtle);
+        border-radius: var(--radius-sm);
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--pink);
+      }
+
+      .panel-days-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .day-item-pill {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 12px 16px;
+        background: var(--bg-warm);
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-md);
+        transition: all 0.18s ease;
+      }
+
+      .day-item-pill:hover {
+        background: #ffffff;
+        border-color: var(--border-card);
+        box-shadow: var(--shadow-xs);
+      }
+
+      .day-badge-small {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--ink);
+        background: #ffffff;
+        border: 1px solid var(--border-subtle);
+        padding: 3px 8px;
+        border-radius: 4px;
+        white-space: nowrap;
+      }
+
+      .day-text-wrap {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .day-title {
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--text-main);
+      }
+
+      .day-desc {
+        font-size: 12px;
+        color: var(--text-muted);
+        line-height: 1.4;
+        margin-top: 2px;
+      }
+
+      /* ================= WHAT YOU GAIN (Grid) ================= */
+      .gains-section {
+        padding-block: 84px 60px;
+      }
+
+      .gains-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .gain-card {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        background: #ffffff;
+        border: 1px solid var(--border-card);
+        border-radius: var(--radius-lg);
+        padding: 28px;
+        transition: all 0.22s ease;
+      }
+
+      .gain-card:hover {
+        border-color: rgba(43, 6, 56, 0.2);
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+      }
+
+      .gain-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .gain-icon.pink { background: rgba(234, 10, 118, 0.08); color: var(--pink); }
+      .gain-icon.orange { background: rgba(252, 143, 13, 0.08); color: var(--orange); }
+      .gain-icon.purple { background: rgba(43, 6, 56, 0.07); color: var(--ink); }
+      .gain-icon.star { background: rgba(139, 52, 186, 0.08); color: var(--purple-accent); }
+
+      .gain-icon svg { width: 22px; height: 22px; }
+
+      .gain-content h4 {
+        font-size: 17px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 8px;
+        line-height: 1.3;
+      }
+
+      .gain-content p {
+        font-size: 13.5px;
+        color: var(--text-body);
+        line-height: 1.6;
+        font-weight: 400;
+      }
+
+      /* ================= PARENT FAQ SECTION (Accordion) ================= */
+      .faq-section {
+        padding-block: 70px;
+        background: var(--bg-warm);
+        border-top: 1px solid var(--border-subtle);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .faq-accordion {
+        max-width: 820px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .faq-item {
+        background: #ffffff;
+        border: 1px solid var(--border-card);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        transition: all 0.2s ease;
+      }
+
+      .faq-item:hover {
+        border-color: var(--ink);
+      }
+
+      .faq-question-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 24px;
+        background: transparent;
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--ink);
+        text-align: left;
+        cursor: pointer;
+        gap: 16px;
+      }
+
+      .faq-chevron {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.2s ease;
+        flex-shrink: 0;
+        color: var(--pink);
+      }
+
+      .faq-item.open .faq-chevron {
+        transform: rotate(180deg);
+      }
+
+      .faq-answer {
+        display: none;
+        padding: 0 24px 20px 24px;
+        font-size: 14px;
+        color: var(--text-body);
+        line-height: 1.65;
+        border-top: 1px solid transparent;
+      }
+
+      .faq-item.open .faq-answer {
+        display: block;
+      }
+
+      /* ================= HIGH-CONVERTING BOTTOM HERO BANNER ================= */
+      .bottom-cta-banner {
+        position: relative;
+        background: linear-gradient(135deg, #2b0638 0%, #190222 100%);
+        border-radius: var(--radius-card);
+        padding: clamp(36px, 5vw, 64px);
+        color: #ffffff;
+        margin-block: 60px 40px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .banner-ambient-glow {
+        position: absolute;
+        top: -40%;
+        right: -10%;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(234, 10, 118, 0.25) 0%, transparent 70%);
+        filter: blur(40px);
+        pointer-events: none;
+      }
+
+      .banner-grid {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 36px;
+        align-items: center;
+      }
+
+      .banner-left h3 {
+        font-size: clamp(26px, 3.2vw, 38px);
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.18;
+        margin-bottom: 14px;
+      }
+
+      .banner-left p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        margin-bottom: 24px;
+        max-width: 520px;
+      }
+
+      .banner-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .banner-right-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: var(--radius-lg);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .contact-quick-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .contact-quick-item svg {
+        color: var(--orange);
+        flex-shrink: 0;
+      }
+
+      .contact-quick-link {
+        color: #ffffff;
+        transition: color 0.18s ease;
+      }
+
+      .contact-quick-link:hover {
+        color: var(--pink);
+      }
+
+      /* QR Widget embedded in banner */
+      .banner-qr-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .qr-thumb-box {
+        width: 60px;
+        height: 60px;
+        background: #ffffff;
+        border-radius: 6px;
+        padding: 4px;
+        flex-shrink: 0;
+      }
+
+      .qr-thumb-box svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .qr-meta-note {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .qr-meta-note span:first-child {
+        font-size: 12px;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .qr-meta-note span:last-child {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      /* ================= SITE FOOTER ================= */
+      .site-footer {
+        background: #ffffff;
+        border-top: 1px solid var(--border-subtle);
+        padding-block: 36px;
+        color: var(--text-muted);
+        font-size: 13px;
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .footer-brand-lockup {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer-brand-lockup img.f-logo {
+        height: 28px;
+        width: auto;
+      }
+
+      .footer-brand-lockup img.f-text {
+        height: 16px;
+        width: auto;
+        max-width: 80px;
+      }
+
+      .footer-brand-sub {
+        font-size: 12px;
+        color: var(--text-light);
+        margin-left: 6px;
+      }
+
+      .footer-nav {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        list-style: none;
+      }
+
+      .footer-nav a {
+        color: var(--text-muted);
+        font-weight: 500;
+        transition: color 0.18s ease;
+      }
+
+      .footer-nav a:hover {
+        color: var(--ink);
+      }
+
+      /* ================= ENROLLMENT MODAL ================= */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(25, 2, 34, 0.6);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.22s ease;
+      }
+
+      .modal-backdrop.open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .modal-card {
+        background: #ffffff;
+        border-radius: var(--radius-card);
+        width: min(500px, 100%);
+        padding: clamp(24px, 4vw, 36px);
+        border: 1px solid var(--border-subtle);
+        box-shadow: 0 25px 60px rgba(25, 2, 34, 0.2);
+        position: relative;
+        transform: translateY(16px);
+        transition: transform 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .modal-backdrop.open .modal-card {
+        transform: translateY(0);
+      }
+
+      .modal-close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: var(--bg-warm);
+        border: 1px solid var(--border-subtle);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        transition: all 0.15s ease;
+      }
+
+      .modal-close-btn:hover {
+        color: var(--ink);
+        border-color: var(--ink);
+        background: #ffffff;
+      }
+
+      .modal-heading {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: 6px;
+      }
+
+      .modal-subtext {
+        font-size: 13.5px;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+        line-height: 1.5;
+      }
+
+      .form-group {
+        margin-bottom: 16px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 12.5px;
+        font-weight: 600;
+        color: var(--text-main);
+        margin-bottom: 6px;
+      }
+
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 11px 14px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border-card);
+        font-size: 14px;
+        font-family: inherit;
+        outline: none;
+        background: #ffffff;
+        color: var(--text-main);
+        transition: all 0.2s ease;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus {
+        border-color: var(--border-focus);
+        box-shadow: 0 0 0 3px rgba(234, 10, 118, 0.12);
+      }
+
+      /* ================= MOBILE BOTTOM ACTION BAR ================= */
+      .mobile-sticky-bar {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-top: 1px solid var(--border-card);
+        padding: 12px 18px;
+        z-index: 99;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+      }
+
+      .mobile-bar-inner {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .mobile-bar-inner .btn {
+        flex: 1;
+        padding-block: 11px;
+      }
+
+      /* ================= RESPONSIVE ================= */
+      @media (max-width: 980px) {
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+
+        .stats-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .comparison-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .pillars-bento {
+          grid-template-columns: 1fr;
+        }
+
+        .roadmap-panel.active {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+
+        .banner-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .gains-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .mobile-sticky-bar {
+          display: block;
+        }
+
+        body {
+          padding-bottom: 64px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Ambient Aurora Mesh in Background -->
+    <div class="ambient-glow-wrapper" aria-hidden="true">
+      <div class="ambient-orb-1"></div>
+      <div class="ambient-orb-2"></div>
+    </div>
+
+    <!-- ================= TOP NAVBAR ================= -->
+    <header class="navbar" id="top-nav">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-link" id="brand-home-link" aria-label="Basik Home">
+          <img src="assets/Logo.png" alt="Basik Mark" class="logo-icon" />
+          <div class="brand-title-wrap">
+            <img src="assets/Logo Textx.png" alt="Basik" class="brand-wordmark" />
+            <span class="tagline">Your Beyond-School Foundation</span>
+          </div>
+        </a>
+
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#transformation">Outcomes</a></li>
+            <li><a href="#pillars">Methodology</a></li>
+            <li><a href="#roadmap">30-Day Plan</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            href="https://wa.me/917034491067?text=Hi%2C%20I%20am%20interested%20in%20the%20Basik%20Speaker%20Training%20Programme"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
+            id="nav-wa-link"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.52 3.449A11.905 11.905 0 0 0 12.042 0C5.437 0 .07 5.367.07 11.972a11.91 11.91 0 0 0 1.621 6.007L0 24l6.208-1.628a11.954 11.954 0 0 0 5.834 1.506h.005c6.602 0 11.972-5.368 11.972-11.974a11.897 11.897 0 0 0-3.499-8.455zm-8.478 18.04h-.004a9.92 9.92 0 0 1-5.06-1.39l-.363-.215-3.763.987 1.004-3.669-.236-.375a9.897 9.897 0 0 1-1.52-5.255c0-5.484 4.463-9.947 9.95-9.947 2.656 0 5.153 1.034 7.03 2.912a9.88 9.88 0 0 1 2.908 7.034c0 5.485-4.463 9.948-9.946 9.948zm5.452-7.447c-.299-.149-1.77-.873-2.044-.973-.274-.099-.474-.149-.673.15-.199.299-.773.973-.948 1.172-.174.199-.349.224-.648.075-.299-.15-1.262-.465-2.404-1.484-.888-.792-1.488-1.77-1.662-2.07-.175-.299-.019-.46.131-.61.135-.134.299-.349.448-.523.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.523-.075-.15-.673-1.623-.922-2.222-.243-.583-.49-.504-.673-.513l-.573-.01c-.199 0-.523.075-.797.374-.274.299-1.047 1.022-1.047 2.493s1.072 2.891 1.221 3.09c.15.199 2.11 3.221 5.111 4.518.714.309 1.272.494 1.706.632.718.228 1.371.196 1.888.119.576-.086 1.77-.723 2.019-1.42.249-.698.249-1.296.174-1.42-.074-.125-.274-.199-.573-.349z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <button class="btn btn-primary" id="open-enroll-modal" type="button">
+            Enroll Now &rarr;
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO SECTION ================= -->
+      <section class="hero-section" id="overview">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Hero Content -->
+            <div class="hero-content">
+              <div class="cohort-pill">
+                <span class="pulse-indicator" aria-hidden="true"></span>
+                <span>Next Cohort Starting Soon • Grades 5–10</span>
+              </div>
+
+              <h1 class="hero-headline">
+                Empower your child to speak with
+                <span class="highlight-pink">courage &amp; clarity</span>.
+              </h1>
+
+              <p class="hero-subhead">
+                <strong>Basik Speaker</strong> is a transformative 30-day intensive public speaking training programme. Designed specifically for Grades 5–10 to turn hesitation into genuine stage mastery through 1-on-1 mentorship.
+              </p>
+
+              <div class="hero-actions-group">
+                <button class="btn btn-pink btn-lg" id="hero-enroll-btn" type="button">
+                  Enroll in Programme &rarr;
+                </button>
+                <a
+                  href="https://wa.me/917034491067?text=Hello%20Basik%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20the%20Basik%20Speaker%20Training%20Programme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-whatsapp btn-lg"
+                  id="hero-whatsapp-btn"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.52 3.449A11.905 11.905 0 0 0 12.042 0C5.437 0 .07 5.367.07 11.972a11.91 11.91 0 0 0 1.621 6.007L0 24l6.208-1.628a11.954 11.954 0 0 0 5.834 1.506h.005c6.602 0 11.972-5.368 11.972-11.974a11.897 11.897 0 0 0-3.499-8.455zm-8.478 18.04h-.004a9.92 9.92 0 0 1-5.06-1.39l-.363-.215-3.763.987 1.004-3.669-.236-.375a9.897 9.897 0 0 1-1.52-5.255c0-5.484 4.463-9.947 9.95-9.947 2.656 0 5.153 1.034 7.03 2.912a9.88 9.88 0 0 1 2.908 7.034c0 5.485-4.463 9.948-9.946 9.948zm5.452-7.447c-.299-.149-1.77-.873-2.044-.973-.274-.099-.474-.149-.673.15-.199.299-.773.973-.948 1.172-.174.199-.349.224-.648.075-.299-.15-1.262-.465-2.404-1.484-.888-.792-1.488-1.77-1.662-2.07-.175-.299-.019-.46.131-.61.135-.134.299-.349.448-.523.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.523-.075-.15-.673-1.623-.922-2.222-.243-.583-.49-.504-.673-.513l-.573-.01c-.199 0-.523.075-.797.374-.274.299-1.047 1.022-1.047 2.493s1.072 2.891 1.221 3.09c.15.199 2.11 3.221 5.111 4.518.714.309 1.272.494 1.706.632.718.228 1.371.196 1.888.119.576-.086 1.77-.723 2.019-1.42.249-.698.249-1.296.174-1.42-.074-.125-.274-.199-.573-.349z"/>
+                  </svg>
+                  <span>Chat with Advisor</span>
+                </a>
+              </div>
+
+              <!-- Social Proof Trust Line -->
+              <div class="hero-social-proof">
+                <div class="avatar-stack">
+                  <div class="avatar-stack-item bg-1">AS</div>
+                  <div class="avatar-stack-item bg-2">RM</div>
+                  <div class="avatar-stack-item bg-3">KP</div>
+                  <div class="avatar-stack-item bg-4">NV</div>
+                </div>
+                <div class="proof-text">
+                  <span class="proof-stars">★★★★★</span>
+                  <div><strong>350+ Students Trained</strong> across India</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Hero Visual Card -->
+            <div class="hero-visual-card">
+              <div class="visual-photo-wrap">
+                <img
+                  src="assets/speaker-student.jpg"
+                  alt="Confident young student delivering a speech on stage"
+                  class="hero-photo"
+                  loading="eager"
+                />
+                <div class="photo-gradient-overlay"></div>
+
+                <!-- Floating Interactive Chips -->
+                <div class="floating-chip chip-top-left">
+                  <span class="chip-icon">🎙️</span>
+                  <span>1-on-1 Speech Coach</span>
+                </div>
+
+                <div class="floating-chip chip-bottom-right">
+                  <span class="chip-icon">🏆</span>
+                  <span>Grand Showcase Stage</span>
+                </div>
+              </div>
+
+              <div class="hero-card-meta">
+                <span class="hero-meta-badge">Curriculum Highlights</span>
+                <div class="hero-meta-title">Grades 5 to 10 Focused Pedagogy</div>
+                <p class="hero-meta-sub">
+                  30 Days of Daily Missions • Voice Modulation • Impromptu Speaking
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= STATS BENTO STRIP ================= -->
+          <div class="stats-section">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-num-row">
+                  <span class="stat-num">30</span>
+                  <span class="stat-unit">Days</span>
+                </div>
+                <div class="stat-label">Intensive Duration</div>
+                <div class="stat-detail">1 full month of guided habit building</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-num-row">
+                  <span class="stat-num">60</span>
+                  <span class="stat-unit">Min/Day</span>
+                </div>
+                <div class="stat-label">Daily Micro-Habits</div>
+                <div class="stat-detail">Bite-sized, engaging speaking missions</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-num-row">
+                  <span class="stat-num">5–10</span>
+                  <span class="stat-unit">Grades</span>
+                </div>
+                <div class="stat-label">Age-Calibrated</div>
+                <div class="stat-detail">Tailored developmental psychology</div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-num-row">
+                  <span class="stat-num">1-on-1</span>
+                  <span class="stat-unit">Mentor</span>
+                </div>
+                <div class="stat-label">Personal Coaching</div>
+                <div class="stat-detail">Individual review for every single speech</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BEFORE VS AFTER TRANSFORMATION ================= -->
+      <section class="transformation-section" id="transformation">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-tag">Tangible Transformation</span>
+            <h2 class="section-title">From Stage Hesitation to Unstoppable Presence</h2>
+            <p class="section-subtitle">
+              Public speaking is not an innate gift—it is a repeatable skill. Here is how your child's confidence evolves in 30 days.
+            </p>
+          </div>
+
+          <div class="comparison-grid">
+            <!-- Before Card -->
+            <div class="comparison-card card-before">
+              <div class="comparison-header">
+                <span class="comparison-pill">Day 1 • Before Basik</span>
+                <span style="font-size: 20px;">🌧️</span>
+              </div>
+              <h3 class="comparison-title">Nervous &amp; Hesitant</h3>
+              <ul class="comparison-list">
+                <li>
+                  <span class="comp-icon">&#10005;</span>
+                  <span>Freezes up when called upon in classroom discussions or school assembly.</span>
+                </li>
+                <li>
+                  <span class="comp-icon">&#10005;</span>
+                  <span>Frequent filler words ("um, uh, like") and rushing through sentences.</span>
+                </li>
+                <li>
+                  <span class="comp-icon">&#10005;</span>
+                  <span>Looks at feet, fiddles with hands, and struggles with eye contact.</span>
+                </li>
+                <li>
+                  <span class="comp-icon">&#10005;</span>
+                  <span>Memorizes speech scripts word-for-word and panics when losing place.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- After Card -->
+            <div class="comparison-card card-after">
+              <div class="comparison-header">
+                <span class="comparison-pill">Day 30 • After Basik</span>
+                <span style="font-size: 20px;">⭐</span>
+              </div>
+              <h3 class="comparison-title">Poised, Fluent &amp; Inspiring</h3>
+              <ul class="comparison-list">
+                <li>
+                  <span class="comp-icon">&#10003;</span>
+                  <span>Confidently volunteers for podium speeches, school debates, and presentations.</span>
+                </li>
+                <li>
+                  <span class="comp-icon">&#10003;</span>
+                  <span>Deliberate vocal pauses, rhythmic pacing, and crisp pronunciation.</span>
+                </li>
+                <li>
+                  <span class="comp-icon">&#10003;</span>
+                  <span>Commanding posture, open gestures, and warm audience eye engagement.</span>
+                </li>
+                <li>
+                  <span class="comp-icon">&#10003;</span>
+                  <span>Thinks on their feet using structured storytelling frameworks.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 4 PILLARS SECTION ================= -->
+      <section class="pillars-section" id="pillars">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-tag">The Basik Method</span>
+            <h2 class="section-title">The Four Core Pillars of Basik Speaker</h2>
+            <p class="section-subtitle">
+              A holistic architecture engineered specifically for young minds to replace fear with authentic self-expression.
+            </p>
+          </div>
+
+          <div class="pillars-bento">
+            <!-- Pillar 1 -->
+            <article class="pillar-bento-card" id="pillar-card-1">
+              <div>
+                <div class="pillar-top-meta">
+                  <div class="pillar-icon-box c-ink">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <span class="pillar-number">01 / PILLAR</span>
+                </div>
+                <h3 class="pillar-title">One-to-One Mentorship</h3>
+                <p class="pillar-desc">
+                  No generic mass lectures. Every student is paired with a dedicated speech coach who diagnoses vocal hesitation, refines tonality, and provides individual video feedback.
+                </p>
+              </div>
+              <ul class="pillar-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Personalized pace matching your child's personality
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Continuous constructive video speech reviews
+                </li>
+              </ul>
+            </article>
+
+            <!-- Pillar 2 -->
+            <article class="pillar-bento-card" id="pillar-card-2">
+              <div>
+                <div class="pillar-top-meta">
+                  <div class="pillar-icon-box c-orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                      <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
+                  </div>
+                  <span class="pillar-number">02 / PILLAR</span>
+                </div>
+                <h3 class="pillar-title">Daily Speaking Missions</h3>
+                <p class="pillar-desc">
+                  Confidence comes through repetition. Students undertake exciting 60-minute daily speaking challenges—recording mini-speeches, spontaneous responses, and vocal drills.
+                </p>
+              </div>
+              <ul class="pillar-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Gamified prompts: "Pitch an Invention", "Defend an Opinion"
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Converts public speaking into a natural daily reflex
+                </li>
+              </ul>
+            </article>
+
+            <!-- Pillar 3 -->
+            <article class="pillar-bento-card" id="pillar-card-3">
+              <div>
+                <div class="pillar-top-meta">
+                  <div class="pillar-icon-box c-pink">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                      <circle cx="12" cy="10" r="2.5"></circle>
+                    </svg>
+                  </div>
+                  <span class="pillar-number">03 / PILLAR</span>
+                </div>
+                <h3 class="pillar-title">Live Masterclasses &amp; Tasks</h3>
+                <p class="pillar-desc">
+                  Interactive masterclasses break down speech architecture: irresistible hooks, memorable 3-point body structures, body language cues, and how to command audience silence.
+                </p>
+              </div>
+              <ul class="pillar-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Learn proven storytelling formulas (Hero's Journey, STAR)
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Live real-time teacher corrections &amp; roleplay drills
+                </li>
+              </ul>
+            </article>
+
+            <!-- Pillar 4 -->
+            <article class="pillar-bento-card" id="pillar-card-4">
+              <div>
+                <div class="pillar-top-meta">
+                  <div class="pillar-icon-box c-purple">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"></path>
+                      <path d="M7 14h10v7H7z"></path>
+                      <path d="M4 22h16"></path>
+                      <path d="M18 10a4 4 0 0 0-12 0"></path>
+                    </svg>
+                  </div>
+                  <span class="pillar-number">04 / PILLAR</span>
+                </div>
+                <h3 class="pillar-title">Weekly Speaking Gatherings</h3>
+                <p class="pillar-desc">
+                  A supportive, warm stage every single week where students present live in front of mentors and peers. They experience real applause, constructive feedback, and stage presence.
+                </p>
+              </div>
+              <ul class="pillar-highlights-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Safe, high-energy environment with zero judgment
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  Gradual exposure that systematically eliminates stage fright
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INTERACTIVE 30-DAY ROADMAP ================= -->
+      <section class="roadmap-section" id="roadmap">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-tag">Curriculum Journey</span>
+            <h2 class="section-title">Your Child's 30-Day Step-by-Step Roadmap</h2>
+            <p class="section-subtitle">
+              Explore the four progressive weeks designed to build lasting public speaking instincts.
+            </p>
+          </div>
+
+          <!-- Tabs Switcher -->
+          <div class="roadmap-tabs-nav" role="tablist">
+            <button class="roadmap-tab-btn active" data-week="1" role="tab" aria-selected="true">
+              Week 1: Mindset &amp; Voice
+            </button>
+            <button class="roadmap-tab-btn" data-week="2" role="tab" aria-selected="false">
+              Week 2: Structure &amp; Hooks
+            </button>
+            <button class="roadmap-tab-btn" data-week="3" role="tab" aria-selected="false">
+              Week 3: Body &amp; Vocal Art
+            </button>
+            <button class="roadmap-tab-btn" data-week="4" role="tab" aria-selected="false">
+              Week 4: Showcase &amp; Stage
+            </button>
+          </div>
+
+          <!-- Tab Panels -->
+          <div class="roadmap-panels-container">
+            <!-- Panel Week 1 -->
+            <div class="roadmap-panel active" id="panel-week-1" role="tabpanel">
+              <div class="panel-left-meta">
+                <span class="badge-tag">Days 1 to 7</span>
+                <h3>Conquering Butterflies &amp; Finding Your Voice</h3>
+                <p>
+                  We start by dismantling the fear of judgment. Students learn deep diaphragmatic breathing, posture grounding, and craft their very first 60-second self-introduction speech.
+                </p>
+                <div class="panel-deliverable-badge">
+                  🎯 Milestone: 60-Second Video Self-Intro Reviewed by Mentor
+                </div>
+              </div>
+              <div class="panel-days-list">
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 1–2</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Ice-Breaking &amp; Self-Discovery</span>
+                    <span class="day-desc">Understanding your unique speaking style &amp; baseline assessment.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 3–4</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Breath Support &amp; Stage Posture</span>
+                    <span class="day-desc">Eliminating shaky voices through anchor breathing techniques.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 5–7</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">The First Mini-Speech</span>
+                    <span class="day-desc">Delivering your introductory story to your 1-on-1 mentor.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Week 2 -->
+            <div class="roadmap-panel" id="panel-week-2" role="tabpanel">
+              <div class="panel-left-meta">
+                <span class="badge-tag">Days 8 to 14</span>
+                <h3>Structuring Speeches That Captivate</h3>
+                <p>
+                  Great speakers don't ramble—they organize. Students master powerful narrative frameworks: catchy opening hooks, the "Rule of Three" body structure, and punchy calls-to-action.
+                </p>
+                <div class="panel-deliverable-badge">
+                  🎯 Milestone: 2-Minute Persuasive Pitch Delivery
+                </div>
+              </div>
+              <div class="panel-days-list">
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 8–10</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Crafting Irresistible Openers</span>
+                    <span class="day-desc">How to grab the audience within the first 10 seconds.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 11–12</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">The Power of Storytelling (STAR Model)</span>
+                    <span class="day-desc">Turning personal anecdotes into inspiring life lessons.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 13–14</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Memorable Closings</span>
+                    <span class="day-desc">Ending with clarity that leaves people thinking for hours.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Week 3 -->
+            <div class="roadmap-panel" id="panel-week-3" role="tabpanel">
+              <div class="panel-left-meta">
+                <span class="badge-tag">Days 15 to 21</span>
+                <h3>Vocal Artistry &amp; Non-Verbal Power</h3>
+                <p>
+                  Over 70% of communication is non-verbal. In Week 3, students train their vocal dynamics—inflection, pacing, dramatic pauses, and purposeful hand gestures that magnify their points.
+                </p>
+                <div class="panel-deliverable-badge">
+                  🎯 Milestone: Impromptu Speech without Filler Words
+                </div>
+              </div>
+              <div class="panel-days-list">
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 15–17</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Eliminating Fillers ("Um", "Ah")</span>
+                    <span class="day-desc">Replacing nervous hesitations with confident silences.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 18–19</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Body Language &amp; Stage Movement</span>
+                    <span class="day-desc">Eye contact scanning patterns, open hands, and commanding space.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 20–21</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Impromptu "Think-on-Feet" Drills</span>
+                    <span class="day-desc">Speaking spontaneously on surprise topics with zero prep time.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Panel Week 4 -->
+            <div class="roadmap-panel" id="panel-week-4" role="tabpanel">
+              <div class="panel-left-meta">
+                <span class="badge-tag">Days 22 to 30</span>
+                <h3>Capstone Showcase &amp; Graduation</h3>
+                <p>
+                  The grand culmination! Students prepare a full 3-minute capstone keynote speech, rehearse with their mentor, and deliver it live in front of the community gathering.
+                </p>
+                <div class="panel-deliverable-badge">
+                  🎯 Milestone: Live Capstone Speech &amp; Basik Certification
+                </div>
+              </div>
+              <div class="panel-days-list">
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 22–25</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Drafting the Capstone Speech</span>
+                    <span class="day-desc">Fine-tuning every line with 1-on-1 mentor guidance.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 26–28</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">Dress Rehearsals &amp; Timing</span>
+                    <span class="day-desc">Polishing pitch, delivery tempo, and audio/video setups.</span>
+                  </div>
+                </div>
+                <div class="day-item-pill">
+                  <span class="day-badge-small">Day 29–30</span>
+                  <div class="day-text-wrap">
+                    <span class="day-title">The Grand Graduation Showcase</span>
+                    <span class="day-desc">Delivering on the live stage, receiving certificate &amp; honors.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WHAT YOU GAIN SECTION ================= -->
+      <section class="gains-section" id="gain">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-tag">Lifetime Benefits</span>
+            <h2 class="section-title">Lifelong Fluency Beyond the Classroom</h2>
+            <p class="section-subtitle">
+              Public speaking gives children a superpower that stays with them throughout school, college, and their future careers.
+            </p>
+          </div>
+
+          <div class="gains-grid">
+            <div class="gain-card">
+              <div class="gain-icon purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" y1="19" x2="12" y2="23"></line>
+                  <line x1="8" y1="23" x2="16" y2="23"></line>
+                </svg>
+              </div>
+              <div class="gain-content">
+                <h4>Articulate &amp; Crisp Speech</h4>
+                <p>
+                  Master voice projection, eliminate filler words, and command any room with natural vocal pacing and resonance.
+                </p>
+              </div>
+            </div>
+
+            <div class="gain-card">
+              <div class="gain-icon pink" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                  <line x1="2" y1="20" x2="22" y2="20"></line>
+                </svg>
+              </div>
+              <div class="gain-content">
+                <h4>Unshakable Self-Confidence</h4>
+                <p>
+                  Overcome stage butterflies and social self-doubt. Build the bravery to volunteer, lead groups, and share original perspectives.
+                </p>
+              </div>
+            </div>
+
+            <div class="gain-card">
+              <div class="gain-icon orange" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                  <path d="M12 2a7 7 0 0 0-7 7c0 2.5 1.5 4.5 3 6h8c1.5-1.5 3-3.5 3-6a7 7 0 0 0-7-7z"></path>
+                </svg>
+              </div>
+              <div class="gain-content">
+                <h4>Structured Critical Thinking</h4>
+                <p>
+                  Learn proven thinking formulas to organize complex thoughts rapidly and deliver clear, persuasive points without rambling.
+                </p>
+              </div>
+            </div>
+
+            <div class="gain-card">
+              <div class="gain-icon star" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="gain-content">
+                <h4>Real Stage Portfolio &amp; Certificate</h4>
+                <p>
+                  Not just theory! Students graduate with recorded video speeches, official certificate of completion, and real stage experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PARENT FAQ SECTION (Accordion) ================= -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-tag">Parent Questions</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">
+              Everything you need to know about batch timings, mentor interaction, and program details.
+            </p>
+          </div>
+
+          <div class="faq-accordion">
+            <div class="faq-item open">
+              <button class="faq-question-btn" type="button" aria-expanded="true">
+                <span>How does the 30-day program fit around school and homework?</span>
+                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                The program is specifically designed for busy students in Grades 5–10! The daily missions take only 45–60 minutes and can be completed flexibly after school hours. Mentors adapt to your child's weekly exam schedules so it never feels burdensome.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" aria-expanded="false">
+                <span>My child is extremely shy and hesitant to speak in front of others. Will they feel overwhelmed?</span>
+                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                That is exactly who this program is crafted for! We never throw a shy child straight onto a crowded stage. Week 1 begins with safe 1-on-1 private mentor sessions and gentle self-recordings. As confidence grows gradually, they transition seamlessly to small group sessions.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" aria-expanded="false">
+                <span>How are the classes and mentorship sessions conducted?</span>
+                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                Sessions take place through a combination of live interactive masterclasses on Zoom/Google Meet, accompanied by daily video submissions reviewed 1-on-1 by their assigned mentor via dedicated student portals and WhatsApp.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" aria-expanded="false">
+                <span>How do parents track their child's progress throughout the 30 days?</span>
+                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                Parents receive weekly progress scorecards highlighting metrics such as speech pacing, vocal variety, filler word reduction, and confidence scores. You'll also receive recordings of your child's speeches so you can watch their transformation firsthand.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" aria-expanded="false">
+                <span>What are the enrollment fees and upcoming batch dates?</span>
+                <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                Batches are capped at small sizes to ensure high mentor attentiveness. To receive the current cohort schedule, pricing options, and scholarship details, tap the "Enroll Now" or "Chat on WhatsApp" button and our admissions team will share the complete details immediately.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BOTTOM CONVERSION HERO BANNER ================= -->
+      <section class="container" id="contact">
+        <div class="bottom-cta-banner">
+          <div class="banner-ambient-glow" aria-hidden="true"></div>
+          <div class="banner-grid">
+            <div class="banner-left">
+              <span class="badge-tag" style="background: rgba(255, 255, 255, 0.1); color: #ff8abf;">Limited Cohort Seats</span>
+              <h3>Give your child the gift of fearless expression.</h3>
+              <p>
+                Join the upcoming cohort of Basik Speaker. Take the first step toward building unshakeable public speaking confidence that lasts a lifetime.
+              </p>
+              <div class="banner-actions">
+                <button class="btn btn-pink btn-lg" id="bottom-enroll-btn" type="button">
+                  Enroll in Next Batch &rarr;
+                </button>
+                <a
+                  href="https://wa.me/917034491067?text=Hello%20Basik%20Team%2C%20I%20would%20like%20to%20enroll%20in%20the%20Basik%20Speaker%20Training%20Programme!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-whatsapp btn-lg"
+                  id="bottom-whatsapp-btn"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.52 3.449A11.905 11.905 0 0 0 12.042 0C5.437 0 .07 5.367.07 11.972a11.91 11.91 0 0 0 1.621 6.007L0 24l6.208-1.628a11.954 11.954 0 0 0 5.834 1.506h.005c6.602 0 11.972-5.368 11.972-11.974a11.897 11.897 0 0 0-3.499-8.455zm-8.478 18.04h-.004a9.92 9.92 0 0 1-5.06-1.39l-.363-.215-3.763.987 1.004-3.669-.236-.375a9.897 9.897 0 0 1-1.52-5.255c0-5.484 4.463-9.947 9.95-9.947 2.656 0 5.153 1.034 7.03 2.912a9.88 9.88 0 0 1 2.908 7.034c0 5.485-4.463 9.948-9.946 9.948zm5.452-7.447c-.299-.149-1.77-.873-2.044-.973-.274-.099-.474-.149-.673.15-.199.299-.773.973-.948 1.172-.174.199-.349.224-.648.075-.299-.15-1.262-.465-2.404-1.484-.888-.792-1.488-1.77-1.662-2.07-.175-.299-.019-.46.131-.61.135-.134.299-.349.448-.523.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.523-.075-.15-.673-1.623-.922-2.222-.243-.583-.49-.504-.673-.513l-.573-.01c-.199 0-.523.075-.797.374-.274.299-1.047 1.022-1.047 2.493s1.072 2.891 1.221 3.09c.15.199 2.11 3.221 5.111 4.518.714.309 1.272.494 1.706.632.718.228 1.371.196 1.888.119.576-.086 1.77-.723 2.019-1.42.249-.698.249-1.296.174-1.42-.074-.125-.274-.199-.573-.349z"/>
+                  </svg>
+                  <span>Chat with Us on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="banner-right-card">
+              <div class="contact-quick-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <span style="font-size: 11.5px; color: rgba(255,255,255,0.6); display: block;">Call or WhatsApp</span>
+                  <a href="tel:+917034491067" class="contact-quick-link">+91 70344 91067</a>
+                </div>
+              </div>
+
+              <div class="contact-quick-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="4" ry="4"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <div>
+                  <span style="font-size: 11.5px; color: rgba(255,255,255,0.6); display: block;">Follow Our Journey</span>
+                  <a href="https://instagram.com/basik_ed" target="_blank" rel="noopener noreferrer" class="contact-quick-link">@basik_ed</a>
+                </div>
+              </div>
+
+              <!-- Quick QR Box -->
+              <div class="banner-qr-row">
+                <div class="qr-thumb-box" title="Scan QR to connect on WhatsApp">
+                  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#ffffff"/>
+                    <rect x="6" y="6" width="26" height="26" rx="3" fill="#2b0638"/>
+                    <rect x="11" y="11" width="16" height="16" rx="2" fill="#ffffff"/>
+                    <rect x="15" y="15" width="8" height="8" rx="1" fill="#ea0a76"/>
+                    <rect x="68" y="6" width="26" height="26" rx="3" fill="#2b0638"/>
+                    <rect x="73" y="11" width="16" height="16" rx="2" fill="#ffffff"/>
+                    <rect x="77" y="15" width="8" height="8" rx="1" fill="#ea0a76"/>
+                    <rect x="6" y="68" width="26" height="26" rx="3" fill="#2b0638"/>
+                    <rect x="11" y="73" width="16" height="16" rx="2" fill="#ffffff"/>
+                    <rect x="15" y="77" width="8" height="8" rx="1" fill="#ea0a76"/>
+                    <rect x="36" y="10" width="5" height="5" fill="#2b0638"/>
+                    <rect x="46" y="10" width="5" height="5" fill="#2b0638"/>
+                    <rect x="56" y="10" width="5" height="5" fill="#2b0638"/>
+                    <rect x="36" y="20" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="46" y="20" width="5" height="5" fill="#2b0638"/>
+                    <rect x="56" y="20" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="10" y="36" width="5" height="5" fill="#2b0638"/>
+                    <rect x="20" y="36" width="5" height="5" fill="#2b0638"/>
+                    <rect x="36" y="36" width="6" height="6" fill="#ea0a76"/>
+                    <rect x="48" y="36" width="5" height="5" fill="#2b0638"/>
+                    <rect x="60" y="36" width="5" height="5" fill="#2b0638"/>
+                    <rect x="72" y="36" width="5" height="5" fill="#2b0638"/>
+                    <rect x="84" y="36" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="36" y="48" width="5" height="5" fill="#2b0638"/>
+                    <rect x="48" y="48" width="6" height="6" fill="#ea0a76"/>
+                    <rect x="60" y="48" width="5" height="5" fill="#2b0638"/>
+                    <rect x="72" y="48" width="5" height="5" fill="#2b0638"/>
+                    <rect x="10" y="56" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="26" y="56" width="5" height="5" fill="#2b0638"/>
+                    <rect x="36" y="60" width="5" height="5" fill="#2b0638"/>
+                    <rect x="48" y="60" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="60" y="60" width="6" height="6" fill="#ea0a76"/>
+                    <rect x="72" y="60" width="5" height="5" fill="#2b0638"/>
+                    <rect x="84" y="60" width="5" height="5" fill="#2b0638"/>
+                    <rect x="36" y="74" width="5" height="5" fill="#2b0638"/>
+                    <rect x="48" y="74" width="5" height="5" fill="#2b0638"/>
+                    <rect x="60" y="74" width="5" height="5" fill="#2b0638"/>
+                    <rect x="72" y="74" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="84" y="74" width="5" height="5" fill="#2b0638"/>
+                    <rect x="36" y="84" width="5" height="5" fill="#fc8f0d"/>
+                    <rect x="48" y="84" width="5" height="5" fill="#2b0638"/>
+                    <rect x="60" y="84" width="5" height="5" fill="#2b0638"/>
+                    <rect x="72" y="84" width="5" height="5" fill="#2b0638"/>
+                    <rect x="84" y="84" width="5" height="5" fill="#ea0a76"/>
+                  </svg>
+                </div>
+                <div class="qr-meta-note">
+                  <span>Direct QR Connect</span>
+                  <span>Scan with camera to chat on WhatsApp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= SITE FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-lockup">
+          <img src="assets/Logo.png" alt="Basik Logo" class="f-logo" />
+          <img src="assets/Logo Textx.png" alt="Basik" class="f-text" />
+          <span class="footer-brand-sub">&mdash; Your Beyond-School Foundation</span>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#pillars">Methodology</a></li>
+          <li><a href="#roadmap">Curriculum</a></li>
+          <li><a href="tel:+917034491067">+91 70344 91067</a></li>
+          <li><a href="https://instagram.com/basik_ed" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- ================= MOBILE STICKY CONVERSION BAR ================= -->
+    <div class="mobile-sticky-bar" aria-label="Quick mobile action">
+      <div class="mobile-bar-inner">
+        <a
+          href="https://wa.me/917034491067?text=Hello%20Basik%20Team%2C%20I%20would%20like%20to%20learn%20more%20about%20the%20Basik%20Speaker%20Training%20Programme"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-whatsapp"
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.52 3.449A11.905 11.905 0 0 0 12.042 0C5.437 0 .07 5.367.07 11.972a11.91 11.91 0 0 0 1.621 6.007L0 24l6.208-1.628a11.954 11.954 0 0 0 5.834 1.506h.005c6.602 0 11.972-5.368 11.972-11.974a11.897 11.897 0 0 0-3.499-8.455zm-8.478 18.04h-.004a9.92 9.92 0 0 1-5.06-1.39l-.363-.215-3.763.987 1.004-3.669-.236-.375a9.897 9.897 0 0 1-1.52-5.255c0-5.484 4.463-9.947 9.95-9.947 2.656 0 5.153 1.034 7.03 2.912a9.88 9.88 0 0 1 2.908 7.034c0 5.485-4.463 9.948-9.946 9.948zm5.452-7.447c-.299-.149-1.77-.873-2.044-.973-.274-.099-.474-.149-.673.15-.199.299-.773.973-.948 1.172-.174.199-.349.224-.648.075-.299-.15-1.262-.465-2.404-1.484-.888-.792-1.488-1.77-1.662-2.07-.175-.299-.019-.46.131-.61.135-.134.299-.349.448-.523.15-.175.199-.299.299-.498.1-.2.05-.374-.025-.523-.075-.15-.673-1.623-.922-2.222-.243-.583-.49-.504-.673-.513l-.573-.01c-.199 0-.523.075-.797.374-.274.299-1.047 1.022-1.047 2.493s1.072 2.891 1.221 3.09c.15.199 2.11 3.221 5.111 4.518.714.309 1.272.494 1.706.632.718.228 1.371.196 1.888.119.576-.086 1.77-.723 2.019-1.42.249-.698.249-1.296.174-1.42-.074-.125-.274-.199-.573-.349z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="btn btn-pink" id="mobile-enroll-btn" type="button">
+          Enroll Now &rarr;
+        </button>
+      </div>
+    </div>
+
+    <!-- ================= ENROLLMENT MODAL ================= -->
+    <div class="modal-backdrop" id="enrollModal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-card">
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+        <h3 class="modal-heading" id="modal-title">Enroll in Basik Speaker</h3>
+        <p class="modal-subtext">
+          Fill out this quick form and our mentor team will contact you with batch timings, fee structures, and curriculum roadmap.
+        </p>
+
+        <form id="enrollForm">
+          <div class="form-group">
+            <label for="studentName">Student's Full Name *</label>
+            <input type="text" id="studentName" required placeholder="e.g. Aryan Sharma" />
+          </div>
+
+          <div class="form-group">
+            <label for="studentGrade">Student's Grade (5 – 10) *</label>
+            <select id="studentGrade" required>
+              <option value="">Select Grade</option>
+              <option value="Grade 5">Grade 5</option>
+              <option value="Grade 6">Grade 6</option>
+              <option value="Grade 7">Grade 7</option>
+              <option value="Grade 8">Grade 8</option>
+              <option value="Grade 9">Grade 9</option>
+              <option value="Grade 10">Grade 10</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="parentPhone">Parent / Guardian WhatsApp Number *</label>
+            <input type="tel" id="parentPhone" required placeholder="+91 XXXXX XXXXX" />
+          </div>
+
+          <div class="form-group">
+            <label for="city">City / Location</label>
+            <input type="text" id="city" placeholder="e.g. Bengaluru, Kochi, Mumbai" />
+          </div>
+
+          <button type="submit" class="btn btn-pink btn-lg" style="width: 100%; margin-top: 10px;">
+            Submit &amp; Open WhatsApp Confirmation &rarr;
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ================= JAVASCRIPT LOGIC ================= -->
+    <script>
+      // Modal Controls
+      const modal = document.getElementById("enrollModal");
+      const openModalBtns = [
+        document.getElementById("open-enroll-modal"),
+        document.getElementById("hero-enroll-btn"),
+        document.getElementById("bottom-enroll-btn"),
+        document.getElementById("mobile-enroll-btn")
+      ];
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const enrollForm = document.getElementById("enrollForm");
+
+      openModalBtns.forEach(btn => {
+        if (btn) {
+          btn.addEventListener("click", () => {
+            modal.classList.add("open");
+            document.body.style.overflow = "hidden";
+          });
+        }
+      });
+
+      function closeModal() {
+        modal.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener("click", closeModal);
+      }
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("open")) {
+          closeModal();
+        }
+      });
+
+      // Enrollment Form Submit -> Direct WhatsApp Link
+      if (enrollForm) {
+        enrollForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const name = document.getElementById("studentName").value.trim();
+          const grade = document.getElementById("studentGrade").value;
+          const phone = document.getElementById("parentPhone").value.trim();
+          const city = document.getElementById("city").value.trim();
+
+          const message = `Hello Basik! I would like to enroll for the Basik Speaker Training Programme.%0A%0A*Student Details:*%0A- Name: ${encodeURIComponent(name)}%0A- Grade: ${encodeURIComponent(grade)}%0A- Phone: ${encodeURIComponent(phone)}%0A- City: ${encodeURIComponent(city || "Not specified")}`;
+          
+          window.open(`https://wa.me/917034491067?text=${message}`, "_blank");
+          closeModal();
+        });
+      }
+
+      // Interactive Roadmap Tab Switcher
+      const tabBtns = document.querySelectorAll(".roadmap-tab-btn");
+      const tabPanels = document.querySelectorAll(".roadmap-panel");
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const week = btn.getAttribute("data-week");
+
+          tabBtns.forEach(b => {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          tabPanels.forEach(p => p.classList.remove("active"));
+
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+
+          const targetPanel = document.getElementById(`panel-week-${week}`);
+          if (targetPanel) {
+            targetPanel.classList.add("active");
+          }
+        });
+      });
+
+      // FAQ Accordion Toggle
+      const faqItems = document.querySelectorAll(".faq-item");
+      faqItems.forEach(item => {
+        const btn = item.querySelector(".faq-question-btn");
+        btn.addEventListener("click", () => {
+          const isOpen = item.classList.contains("open");
+          
+          // Optional: close other accordions
+          faqItems.forEach(other => {
+            other.classList.remove("open");
+            const otherBtn = other.querySelector(".faq-question-btn");
+            if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+          });
+
+          if (!isOpen) {
+            item.classList.add("open");
+            btn.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
